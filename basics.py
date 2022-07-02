@@ -9,9 +9,10 @@ M = q/2*(l*x-x**2)
 V = q*(l/2-x)
 
 plt.figure(figsize=(10, 4))
-plt.plot([0] * len(x), color='k')
-plt.plot(M)
-plt.plot(V)
+plt.plot([0]*int(l+1), color='k')
+plt.plot(x, -M)
+# plt.plot(M)
+# plt.plot(V)
+plt.fill(x, -M,"c")
 plt.show()
-
 
